@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-eval-toolkit"
+version = "0.1.0"
+description = "Retrieval metrics + LLM-as-judge answer scoring for RAG pipelines, dependency-free"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "GoXChief", email = "goxchief@gmail.com"}]
+keywords = ["rag", "evaluation", "llm", "retrieval", "llm-as-judge"]
+
+[tool.setuptools.packages.find]
+include = ["rag_eval*"]
+
